@@ -1,0 +1,36 @@
+body {}
+body main {width: 1200px; margin: 0 auto;}
+body main .content {
+    /* item 공통 묶음 */
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center; 
+}
+body main .content .item {margin: 20px 10px;}
+/* 양 옆 margin 없애기 */
+body main .content .item:nth-child(1) {margin: 20px 10px 20px 0;}
+body main .content .item:nth-child(3) {margin: 20px 0 20px 10px;}
+body main .content .item .item_img {}
+body main .content .item .item_img a {}
+body main .content .item .item_img a img {width: 100%;}
+body main .content .item .item_info {}
+body main .content .item .item_info h1 {
+    font-size: 0.875rem; margin: 10px 0 7px 0;
+}
+body main .content .item .item_info p {padding-bottom: 20px;}
+body main .content .item .item_info p em {
+    font-weight: 700; letter-spacing: -0.02rem;
+}
+body main .content .item .item_info .item_info_sub {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    border-top: 1px solid #F3E2C2; padding-top: 10px;
+}
+body main .content .item .item_info .item_info_sub p {
+    font-size: 0.875rem;
+}
+body main .content .item .item_info .item_badge {
+    
+}
+body main .content .item .item_info .item_badge span {
+    font-size: 0.875rem; background-color: #FF9635;
+    color: #fff; padding: 3px 10px;
+}
